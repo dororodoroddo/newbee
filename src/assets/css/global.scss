@@ -1,0 +1,220 @@
+@import 'reset.scss';
+@import 'zIndex.scss';
+@import 'fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+a,
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+:root {
+  --Black-comma: 0, 0, 0;
+  --White-comma: 255, 255, 255;
+  --Black: #000;
+  --White: #fff;
+  --Background-Default: #fff;
+  @include font-family-content;
+}
+
+.h1 {
+  @include font-family-header;
+  font-weight: 900;
+  font-size: 40px;
+}
+.h2 {
+  @include font-family-header;
+  font-weight: 900;
+  font-size: 34px;
+}
+.h3 {
+  @include font-family-header;
+  font-weight: 700;
+  font-size: 28px;
+}
+.h4 {
+  @include font-family-header;
+  font-weight: 700;
+  font-size: 22px;
+}
+.m1 {
+  @include font-family-content;
+  font-weight: 500;
+  font-size: 36px;
+}
+.m2 {
+  @include font-family-content;
+  font-weight: 500;
+  font-size: 30px;
+}
+.m3 {
+  @include font-family-content;
+  font-weight: 500;
+  font-size: 24px;
+}
+.m4 {
+  @include font-family-content;
+  font-weight: 500;
+  font-size: 18px;
+}
+.b1 {
+  @include font-family-content;
+  font-weight: 800;
+  font-size: 36px;
+}
+.b2 {
+  @include font-family-content;
+  font-weight: 800;
+  font-size: 30px;
+}
+.b3 {
+  @include font-family-content;
+  font-weight: 800;
+  font-size: 24px;
+}
+.b4 {
+  @include font-family-content;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+@media (max-width: 960px) {
+  .h1 {
+    font-size: 27px;
+  }
+  .h2 {
+    font-size: 23px;
+  }
+  .h3 {
+    font-size: 19px;
+  }
+  .h4 {
+    font-size: 15px;
+  }
+  .m1 {
+    font-size: 24px;
+  }
+  .m2 {
+    font-size: 20px;
+  }
+  .m3 {
+    font-size: 16px;
+  }
+  .m4 {
+    font-size: 12px;
+  }
+  .b1 {
+    font-size: 24px;
+  }
+  .b2 {
+    font-size: 20px;
+  }
+  .b3 {
+    font-size: 16px;
+  }
+  .b4 {
+    font-size: 12px;
+  }
+}
+.fb100 {
+  color: rgba($color: var(--Black-comma), $alpha: 1);
+}
+.fb80 {
+  color: rgba($color: var(--Black-comma), $alpha: 0.8);
+}
+.fb60 {
+  color: rgba($color: var(--Black-comma), $alpha: 0.6);
+}
+.fb40 {
+  color: rgba($color: var(--Black-comma), $alpha: 0.4);
+}
+.fb20 {
+  color: rgba($color: var(--Black-comma), $alpha: 0.2);
+}
+.fw100 {
+  color: rgba($color: var(--White-comma), $alpha: 1);
+}
+.fw80 {
+  color: rgba($color: var(--White-comma), $alpha: 0.8);
+}
+.fw60 {
+  color: rgba($color: var(--White-comma), $alpha: 0.6);
+}
+.fw40 {
+  color: rgba($color: var(--White-comma), $alpha: 0.4);
+}
+.fw20 {
+  color: rgba($color: var(--White-comma), $alpha: 0.2);
+}
+
+.bb100 {
+  background-color: rgba($color: var(--Black-comma), $alpha: 1);
+}
+.bb80 {
+  background-color: rgba($color: var(--Black-comma), $alpha: 0.8);
+}
+.bb60 {
+  background-color: rgba($color: var(--Black-comma), $alpha: 0.6);
+}
+.bb40 {
+  background-color: rgba($color: var(--Black-comma), $alpha: 0.4);
+}
+.bb20 {
+  background-color: rgba($color: var(--Black-comma), $alpha: 0.2);
+}
+.bw100 {
+  background-color: rgba($color: var(--White-comma), $alpha: 1);
+}
+.bw80 {
+  background-color: rgba($color: var(--White-comma), $alpha: 0.8);
+}
+.bw60 {
+  background-color: rgba($color: var(--White-comma), $alpha: 0.6);
+}
+.bw40 {
+  background-color: rgba($color: var(--White-comma), $alpha: 0.4);
+}
+.bw20 {
+  background-color: rgba($color: var(--White-comma), $alpha: 0.2);
+}
+
+.box1 {
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.box2 {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.box3 {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.box4 {
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.banner-logo {
+  @include font-family-logo;
+}

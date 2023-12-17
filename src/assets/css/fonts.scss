@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@mixin font-family-logo {
+    font-family: 'Lobster', 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin font-family-header {
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+@mixin font-family-content {
+    font-family: 'Nanum Myeongjo', Arial, sans-serif;
+}
